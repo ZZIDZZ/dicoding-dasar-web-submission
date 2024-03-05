@@ -9,7 +9,6 @@ function changeCard() {
     currentCardIndex = (currentCardIndex + 1) % totalCards;
 }
 
-// Ensure DOM is fully loaded before executing
 document.addEventListener('DOMContentLoaded', (event) => {
     changeCard();
     setInterval(changeCard, 3000);
